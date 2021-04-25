@@ -2,5 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 
-def home(requests):
-    return HttpResponse("hello friend")
+def home(request):
+    return render(request, 'generator/home.html', {'password':"testingthis"})
